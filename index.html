@@ -54,7 +54,12 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
                 {% if second_post.image %}
                 <div class="col-md-4">
                 <a href="{{site.baseurl}}{{second_post.url}}">
-                 <img class="w-100" src="{% if second_post.image contains "://" %}{{ second_post.image }}{% else %}{{ second_post.image | absolute_url }}{% endif %}" alt="{{ second_post.title }}">
+                 <!-- <img class="w-100" src="{% if second_post.image contains "://" %}{{ second_post.image }}{% else %}{{ second_post.image | absolute_url }}{% endif %}" alt="{{ second_post.title }}"> -->
+                    <div alt="{{ second_post.title }}" style="
+                        background-image: url({% if second_post.image contains "://" %}{{ second_post.image }}{% else %}{{ second_post.image | absolute_url }}{% endif %});
+                        background-size: cover;
+                        background-position: 20% 44% !important;
+                        height: 100px;" class="w-100"></div>
                 </a>
                 </div>
                 {% endif %}                
@@ -81,7 +86,12 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
                 {% if third_post.image %}
                 <div class="col-md-4">
                 <a href="{{site.baseurl}}{{third_post.url}}">
-                 <img class="w-100" src="{% if third_post.image contains "://" %}{{ third_post.image }}{% else %}{{site.baseurl}}/{{ third_post.image }}{% endif %}" alt="{{ third_post.title }}">
+                 <!-- <img class="w-100" src="{% if third_post.image contains "://" %}{{ third_post.image }}{% else %}{{site.baseurl}}/{{ third_post.image }}{% endif %}" alt="{{ third_post.title }}"> -->
+                    <div alt="{{ third_post.title }}" style="
+                        background-image: url({% if third_post.image contains "://" %}{{ third_post.image }}{% else %}{{ third_post.image | absolute_url }}{% endif %});
+                        background-size: cover;
+                        background-position: 20% 44% !important;
+                        height: 100px;" class="w-100"></div>
                 </a>
                 </div>
                 {% endif %}                
@@ -108,7 +118,12 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
                 {% if fourth_post.image %}
                 <div class="col-md-4">
                 <a href="{{site.baseurl}}{{fourth_post.url}}">
-                <img class="w-100" src="{% if fourth_post.image contains "://" %}{{ fourth_post.image }}{% else %}{{site.baseurl}}/{{ fourth_post.image }}{% endif %}" alt="{{ fourth_post.title }}">
+                <!-- <img class="w-100" src="{% if fourth_post.image contains "://" %}{{ fourth_post.image }}{% else %}{{site.baseurl}}/{{ fourth_post.image }}{% endif %}" alt="{{ fourth_post.title }}"> -->
+                    <div alt="{{ fourth_post.title }}" style="
+                        background-image: url({% if fourth_post.image contains "://" %}{{ fourth_post.image }}{% else %}{{ fourth_post.image | absolute_url }}{% endif %});
+                        background-size: cover;
+                        background-position: 20% 44% !important;
+                        height: 100px;" class="w-100"></div>
                 </a>
                 </div>
                 {% endif %}                
